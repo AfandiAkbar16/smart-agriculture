@@ -8,7 +8,7 @@
         <div class="q-pl-xl q-pr-xl text-white">
           Sebuah bangunan yang dibentuk untuk menghindari dan merawat tanaman
           terhadap berbagai macam cuaca. Manfaat yang utama sebagai sarana yang
-          digunakan untuk melakukan pembibitan tanaman
+          digunakan untuk melakukan pembibitan tanaman.
         </div>
         <div class="q-gutter-lg q-pa-xl row">
           <div class="col-md-5 col-xs-5">
@@ -30,7 +30,7 @@
       </div>
     </div>
     <!-- <div class="miring q-pa-xl bg-teal" ></div> -->
-    <div class="row bg-primary">
+    <!-- <div class="row bg-primary">
       <div class="col-md-6 offset-md-1 q-pa-xl col-xs-12">
         <q-img
           src="https://id-test-11.slatic.net/p/fa3cee507ebcc30317261d16cc81a95e.jpg"
@@ -82,7 +82,7 @@
           matahari, termasuk di Indonesia.
         </div>
       </div>
-    </div>
+    </div> -->
   </q-page>
 </template>
 <script></script>
