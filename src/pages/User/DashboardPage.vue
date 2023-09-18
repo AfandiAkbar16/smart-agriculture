@@ -185,9 +185,7 @@
                           >
                             <strong>
                               {{ alatData.NAMA_ALAT }} =
-                              {{
-                                datasensor !== null ? datasensor.DATA_SENSOR : 0
-                              }}
+                              {{ useRealTimeData ? datasensor.DATA_SENSOR : 0 }}
                             </strong>
                           </q-item-label>
                         </q-item-section>
@@ -201,7 +199,7 @@
                           >
                             <strong>
                               {{
-                                datasensor !== null
+                                useRealTimeData
                                   ? formatTime(datasensor.DATE_TIME)
                                   : "-"
                               }}
@@ -213,9 +211,7 @@
                           >
                             <strong>
                               {{
-                                datasensor !== null
-                                  ? datasensor.KETERANGAN
-                                  : "-"
+                                useRealTimeData ? datasensor.KETERANGAN : "-"
                               }}
                             </strong>
                           </q-item-label>
@@ -332,7 +328,7 @@ export default {
       socket.on("dataUpdate", (data) => {
         this.realTimeData = data;
 
-        // console.log(this.realTimeData);
+        console.log(this.realTimeData);
       });
 
       this.interval = setInterval(() => {

@@ -7,7 +7,7 @@
 
 // Configuration for your app
 // https://v2.quasar.dev/quasar-cli-webpack/quasar-config-js
-const webpack = require("webpack");
+
 const ESLintPlugin = require("eslint-webpack-plugin");
 const { LocalStorage } = require("quasar");
 
@@ -46,14 +46,6 @@ module.exports = configure(function (ctx) {
     // Full list of options: https://v2.quasar.dev/quasar-cli-webpack/quasar-config-js#Property%3A-build
     build: {
       vueRouterMode: "hash", // available values: 'hash', 'history'
-      extendWebpack(cfg) {
-        cfg.plugins.push(
-          new webpack.ProvidePlugin({
-            process: "process/browser",
-            Buffer: ["buffer", "Buffer"],
-          })
-        );
-      },
 
       // transpile: false,
       // publicPath: '/',

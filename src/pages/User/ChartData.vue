@@ -34,7 +34,7 @@ export default {
         },
 
         xaxis: {
-          categories: [0], // Panjang data 20
+          categories: [], // Panjang data 20
         },
         legend: {
           show: true,
@@ -48,7 +48,7 @@ export default {
       series: [
         {
           name: "",
-          data: [0], // Data awal 0 di baris pertama
+          data: [], // Data awal 0 di baris pertama
         },
       ],
       dataCounter: 0, // Untuk menghitung jumlah data yang masuk
