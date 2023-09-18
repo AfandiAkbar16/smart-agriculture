@@ -26,6 +26,7 @@
                       <q-input
                         filled
                         v-model="EMAIL"
+                        type="email"
                         label="Email"
                         hint="Masukkan Email Anda"
                         lazy-rules

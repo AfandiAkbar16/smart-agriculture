@@ -24,6 +24,7 @@
 
             <q-input
               label="Email"
+              type="email"
               lazy-rules
               color="primary"
               v-model="EMAIL"
